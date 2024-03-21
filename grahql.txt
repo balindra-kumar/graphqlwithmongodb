@@ -1,0 +1,35 @@
+query{
+getBooks{
+  _id
+  name
+  price
+  authorName
+}
+}
+
+query{
+getBook(id:"65f974da118c6c53f1467c60"){
+  _id
+  name
+  price
+  authorName
+}
+}
+
+mutation{
+deleteBook(id:"65f974da118c6c53f1467c60"){
+  _id
+  name
+  price
+  authorName
+}
+}
+
+mutation{
+updateBook(_id:"65fad181e7a590bb798f729a", name:"Four Gentleman", price:500, authorName:"Punam Pandely"){
+  _id
+  name
+  price
+  authorName
+}
+}
